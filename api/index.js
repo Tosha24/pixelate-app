@@ -1,9 +1,10 @@
 import axios from "axios";
+import { API_KEY } from "../env";
 
-// const API_KEY = "45129367-a3ab32ab278cd966774a3e10e";
-const API_KEY = "45259971-56080df17ec77770e3d3726fa";
+const MY_API_KEY = API_KEY;
 
-const apiUrl = `https://pixabay.com/api/?key=${API_KEY}`;
+const apiUrl = `https://pixabay.com/api/?key=${MY_API_KEY}`;
+
 
 const formatUrl = (param) => {
   //{q, page, category, order}
